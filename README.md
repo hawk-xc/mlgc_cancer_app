@@ -1,6 +1,6 @@
 ## Structure Directory
 
-### backend-mlgc
+### backend API
 
 ```
 src
@@ -25,7 +25,7 @@ package.json
 README.md
 ```
 
-### frontend-mlgc
+<!-- ### frontend-mlgc
 
 ```
 src
@@ -45,7 +45,7 @@ app.yaml
 favicon.png
 index.html
 package.json
-```
+``` -->
 
 ## How to refactor code
 
