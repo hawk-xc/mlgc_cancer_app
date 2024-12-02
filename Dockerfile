@@ -7,6 +7,8 @@ RUN npm install
 
 COPY . .
 
+COPY config/app_credentials.json /app/config/app_credentials.json
+
 ENV APP_ENV=production
 ENV APP_PORT=8080
 ENV MODEL_URL="https://storage.googleapis.com/wahyu_model_storage/model-in-prod/model.json"
