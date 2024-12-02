@@ -7,13 +7,13 @@ RUN npm install
 
 COPY . .
 
-COPY config/app_credentials.json /app/config/app_credentials.json
+# COPY config/app_credentials.json /app/config/app_credentials.json
 
 ENV APP_ENV=production
 ENV APP_PORT=8080
 ENV MODEL_URL="https://storage.googleapis.com/wahyu_model_storage/model-in-prod/model.json"
 ENV PROJECT_ID="golden-cove-443407-t3"
-ENV GOOGLE_APPLICATION_CREDENTIALS=config/app_credentials.json
+# ENV GOOGLE_APPLICATION_CREDENTIALS=config/app_credentials.json
 
 
 CMD [ "npm", "start" ]
