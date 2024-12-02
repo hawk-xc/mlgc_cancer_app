@@ -15,6 +15,7 @@ function modelData(doc) {
 async function database() {
   const settings = {
     projectId: process.env.PROJECT_ID,
+    keyFilename: process.env.GOOGLE_APPLICATION_CREDENTIALS,
   };
   return new Firestore(process.env.APP_ENV === "local" ? settings : undefined);
 }
