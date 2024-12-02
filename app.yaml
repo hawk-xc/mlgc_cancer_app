@@ -1,20 +1,26 @@
-runtime: python39  # Sesuaikan dengan runtime yang Anda inginkan
+runtime: python39  # atau runtime lain yang sesuai
+
 env: standard
 
 handlers:
+  # Menangani favicon
   - url: /favicon\.png
     static_files: favicon.png
     upload: favicon\.png
 
-  - url: /images
+  # Menangani folder gambar
+  - url: /src/images
     static_dir: src/images/
 
-  - url: /styles
+  # Menangani folder styles
+  - url: /src/styles
     static_dir: src/styles/
 
-  - url: /scripts
+  # Menangani folder scripts
+  - url: /src/scripts
     static_dir: src/scripts/
 
+  # Menangani file index.html
   - url: /
     static_files: index.html
     upload: index.html
