@@ -1,10 +1,20 @@
-runtime: python39
-
-entrypoint: null
+runtime: python39  # Sesuaikan dengan runtime yang Anda inginkan
+env: standard
 
 handlers:
-  - url: /static
-    static_dir: src
+  - url: /favicon\.png
+    static_files: favicon.png
+    upload: favicon\.png
+
+  - url: /images
+    static_dir: src/images/
+
+  - url: /styles
+    static_dir: src/styles/
+
+  - url: /scripts
+    static_dir: src/scripts/
+
   - url: /
     static_files: index.html
     upload: index.html
