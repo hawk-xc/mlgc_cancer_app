@@ -1,23 +1,14 @@
 {
-  "name": "submission-mlgc-backend",
+  "name": "Asclepius",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Asclepius adalah sistem pemeriksaan kulit secara otomatis",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "nodemon ./src/server/server.js",
-    "start": "node ./src/server/server.js"
+    "start": "http-server ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "@google-cloud/firestore": "^7.10.0",
-    "@hapi/hapi": "^21.3.12",
-    "@tensorflow/tfjs-node": "^3.21.1",
-    "dotenv": "^16.4.5"
-  },
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "http-server": "^14.1.1"
   }
 }
